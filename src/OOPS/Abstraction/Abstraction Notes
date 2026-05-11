@@ -1,0 +1,129 @@
+Alright — now you’re entering one of the most important OOP concepts.
+And honestly, students usually confuse:
+
+Encapsulation ❌
+Abstraction ❌
+
+So let’s separate them clearly.
+
+🎭 What is Abstraction?
+Simple Meaning
+
+👉 Hiding implementation details and showing only essential features
+
+User knows:
+
+WHAT to do ✅
+But not:
+HOW it works internally ❌
+🔥 Real-Life Example
+
+Think about an ATM machine.
+
+You:
+
+insert card
+enter PIN
+withdraw money
+
+But internally:
+
+bank server
+verification
+database updates
+
+👉 hidden from you
+
+That is abstraction.
+
+🧠 Main Goal of Abstraction
+Reduce complexity
+Hide unnecessary details
+Make usage simple
+⚠️ Difference Between Encapsulation & Abstraction
+Encapsulation	Abstraction
+Hides data	Hides implementation
+Uses private variables	Uses abstract class/interface
+Focus on security	Focus on simplicity
+🧱 How Java Achieves Abstraction
+
+Two ways:
+
+Abstract Class
+Interface (next topic)
+🟢 Abstract Class
+
+An abstract class:
+
+cannot create objects directly
+may contain abstract methods
+🔥 Abstract Method
+
+An abstract method:
+
+has no body
+child class must implement it
+📦 Example
+abstract class Vehicle {
+
+    abstract void start();
+}
+Child Class
+class Car extends Vehicle {
+
+    void start() {
+        System.out.println("Car starts with key");
+    }
+}
+🔍 Usage
+public class Main {
+    public static void main(String[] args) {
+
+        Vehicle v = new Car();
+
+        v.start();
+    }
+}
+💥 What’s Happening Here?
+abstract void start();
+
+👉 Vehicle says:
+
+“Every vehicle MUST have start()”
+
+But:
+👉 it doesn’t define HOW.
+
+Child class decides implementation.
+
+🧠 Why This is Powerful
+
+Imagine:
+
+Car starts with key
+Bike starts with button
+EV starts digitally
+
+All vehicles:
+
+have start() ✅
+but implementation differs ✅
+
+That’s abstraction + polymorphism together.
+
+⚠️ Important Rules
+❌ Cannot create object
+Vehicle v = new Vehicle(); // ERROR
+
+Because abstract class is incomplete.
+
+✅ Child must implement abstract method
+
+Otherwise child also becomes abstract.
+
+🔥 Real Interview Understanding
+
+Abstraction helps:
+
+define common structure
+force child classes to follow rules
