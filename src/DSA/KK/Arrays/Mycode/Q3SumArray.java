@@ -1,4 +1,4 @@
-package DSA.KK.Arrays;
+package DSA.KK.Arrays.Mycode;
 import java.util.Scanner;
 public class Q3SumArray {
     static void main(String[] args) {

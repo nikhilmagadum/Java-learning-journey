@@ -1,4 +1,4 @@
-package DSA.KK.Arrays;
+package DSA.KK.Arrays.Mycode;
 import java.util.Scanner;
 public class Q1 {
     static void main(String[] args) {

@@ -1,4 +1,4 @@
-package DSA.KK.Arrays;
+package DSA.KK.Arrays.Mycode;
 import java.util.Scanner;
 //WAP to  find the number of K value occurances in an array
 public class Q9NumberofKoccurance {

@@ -1,4 +1,4 @@
-package DSA.KK.Arrays;
+package DSA.KK.Arrays.Mycode;
 
 import java.util.Scanner;
 public class TwoD {

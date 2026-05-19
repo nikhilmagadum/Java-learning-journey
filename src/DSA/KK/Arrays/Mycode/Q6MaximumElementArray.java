@@ -1,18 +1,19 @@
-package DSA.KK.Arrays;
-
+package DSA.KK.Arrays.Mycode;
 import java.util.Scanner;
 
-public class Q7MinimumElementArray {
+public class Q6MaximumElementArray {
 
-    public static int minimum(int[] ar) {
+   public static int maximum(int[] ar) {
 //       int max = 0;
-        int min = ar[0];
+       int max = ar[0];
+       int index = 0;
         for(int i = 0; i < ar.length;i++) {
-            if(ar[i] > min) {
-                min = ar[i];
+            if(ar[i] > max) {
+                max = ar[i];
+                index = i;
             }
         }
-        return min;
+       return index;
     }
 
     public static void main(String[] args) {
@@ -27,9 +28,9 @@ public class Q7MinimumElementArray {
             ar[i] =  sc.nextInt();
         }
 
-        int Minimum_value = minimum(ar);
-        System.out.println(Minimum_value);
+        int Maximum_value = maximum(ar);
+        System.out.println(Maximum_value);
+
 
     }
 }
-

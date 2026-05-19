@@ -1,4 +1,4 @@
-package DSA.KK.Arrays;
+package DSA.KK.Arrays.Mycode;
 public class YReverse {
 
     static void main(String[] args) {

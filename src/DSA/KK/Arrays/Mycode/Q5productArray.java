@@ -1,16 +1,16 @@
-package DSA.KK.Arrays;
+package DSA.KK.Arrays.Mycode;
 
 import java.util.*;
 
-public class Q4sumArrayMethods {
+public class Q5productArray {
 
-    public static int findSum(int[] ar) {
-        int sum = 0;
+    public static long findSum(long[] ar) {
+        long prod = 1;
 
         for (int i = 0; i < ar.length; i++) {
-            sum = sum + ar[i];
+            prod = prod * ar[i];
         }
-        return sum;
+        return prod;
     }
 
     static void main(String[] args) {
@@ -18,12 +18,12 @@ public class Q4sumArrayMethods {
         System.out.println("Enter the Array size : ");
         int n = sc.nextInt();
         System.out.println("Enter the array elements : ");
-        int[] ar = new int[n];
+        long[] ar = new long[n];
 
         for (int i = 0; i < ar.length; i++) {
             ar[i] = sc.nextInt();
         }
-        int res = findSum(ar);
-        System.out.println("The sum of Array elements are : " + res);
+        long res = findSum(ar);
+        System.out.println("The product of Array elements are : " + res);
     }
 }
