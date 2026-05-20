@@ -1,4 +1,4 @@
-package DSA.KK.Arrays.Ayush;
+package DSA.KK.Arrays.Ayush.beginning;
 
 public class NormalMaxLogic {
 

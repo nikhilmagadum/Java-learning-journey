@@ -1,4 +1,4 @@
-package DSA.KK.Arrays.Ayush;
+package DSA.KK.Arrays.Ayush.beginning;
 import java.util.Scanner;
 public class RotateArray {
     static void main(String[] args) {

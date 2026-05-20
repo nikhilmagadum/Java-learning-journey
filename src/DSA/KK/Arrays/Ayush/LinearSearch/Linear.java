@@ -19,6 +19,7 @@ public class Linear {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == k) {
                 System.out.println("key found " + k);
+                return ;
             } else {
                 System.out.println("Key not found ");
             }
