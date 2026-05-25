@@ -18,6 +18,7 @@ public class ExceptionDemo2Day39 {
             int b = sc.nextInt();
             int c = a / b;
 
+
             System.out.println("The Result is : ");
             System.out.println(c);
 
