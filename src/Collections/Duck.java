@@ -28,3 +28,4 @@ public class Duck {
 }
 // wherever Exception is happening that is not going to catch it
 // This way of handing an exception is called as Dukcing an exception
+//Instead of handling the exception inside the method, the method “passes” the responsibility to the calling method using throws.
