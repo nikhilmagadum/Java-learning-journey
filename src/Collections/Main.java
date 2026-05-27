@@ -3,7 +3,8 @@ package Collections;
 import java.util.Scanner;
 
 class Demo1 {
-    void alpha() {
+    void alpha() throws Exception
+    {
         try {
             System.out.println("Connection Established.");
             Scanner sc = new Scanner(System.in);
@@ -13,17 +14,26 @@ class Demo1 {
             int b = sc.nextInt();
             int c = a / b;
             System.out.println(c);
-            System.out.println("Connection Terminated.");
         } catch (Exception e) {
             System.out.println("Handled in Alpha method.");
+            throw e;
+        }
+        finally {
+            System.out.println("Connection Terminated.");
         }
     }
 }
 
 
-public class ExcDay3 {
+public class Main {
     static void main(String[] args) {
         Demo1 d1 = new Demo1();
-        d1.alpha();
+        try {
+            d1.alpha();
+        }
+        catch (Exception e ) {
+            System.out.println("Handled exception in Main");
+        }
+
     }
 }
