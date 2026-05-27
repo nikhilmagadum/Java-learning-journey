@@ -2,9 +2,8 @@ package Collections;
 
 import java.util.Scanner;
 
-class Demo1 {
+class Demo11 {
     void alpha() throws Exception {
-        try {
             System.out.println("Connection Established.");
             Scanner sc = new Scanner(System.in);
             System.out.println("Enter the Numberator : ");
@@ -13,24 +12,19 @@ class Demo1 {
             int b = sc.nextInt();
             int c = a / b;
             System.out.println(c);
-        } catch (Exception e) {
-            System.out.println("Handled in Alpha method.");
-            throw e;
-        } finally {
             System.out.println("Connection Terminated.");
-
-        }
     }
 }
 
-
-public class Main {
+public class Duck {
     static void main(String[] args) {
-        Demo1 d1 = new Demo1();
+        Demo11 d =  new Demo11();
         try {
-            d1.alpha();
-        } catch (Exception e) {
-            System.out.println("Handled exception in Main");
+            d.alpha();
+        }catch(Exception e) {
+            System.out.println("handled in Main");
         }
     }
 }
+// wherever Exception is happening that is not going to catch it
+// This way of handing an exception is called as Dukcing an exception

@@ -1,1 +1,45 @@
 Exception is an unwanted or abnormal event that occurs during program execution and disrupts the normal flow of the program
+
+
+Difference between Handling, Ducking, and Rethrowing:
+
+Concept	Meaning
+Handling Exception	Using try-catch to solve/manage exception
+Ducking Exception	Using throws to pass exception to caller
+Rethrowing Exception	Catching exception first, then throwing again using throw e
+
+
+import java.util.Scanner;
+
+class Demo {
+
+    void alpha() throws Exception {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter number:");
+        int a = sc.nextInt();
+
+        System.out.println("Enter denominator:");
+        int b = sc.nextInt();
+
+        int c = a / b;
+
+        System.out.println(c);
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Demo d = new Demo();
+
+        try {
+            d.alpha();
+        }
+        catch (Exception e) {
+            System.out.println("Exception handled in main");
+        }
+    }
+}
