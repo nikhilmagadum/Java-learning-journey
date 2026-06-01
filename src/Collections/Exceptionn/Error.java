@@ -1,4 +1,4 @@
-package Collections;
+package Collections.Exceptionn;
 
 public class Error {
     static void main(String[] args) {

@@ -1,4 +1,5 @@
-package Collections;
+package Collections.Exceptionn;
+
 import java.util.Scanner;
 
 class Atm {
@@ -25,32 +26,33 @@ class Atm {
 class InvalidInputException extends Exception {
 
 }
+
 class Bank {
 
-   public void Init() {
-       Atm a = new Atm();
-    try {
-        a.acceptInput();
-        a.verify();
-    } catch (Exception e) {
-           try{
-               a.acceptInput();
-               a.verify();
-           }catch(Exception d) {
-              try {
-                  a.acceptInput();
-                  a.verify();
-              }catch(Exception f) {
-                  System.out.println("Card Blocked.Please Contact bank");
-              }
-           }
-    }
+    public void Init() {
+        Atm a = new Atm();
+        try {
+            a.acceptInput();
+            a.verify();
+        } catch (Exception e) {
+            try {
+                a.acceptInput();
+                a.verify();
+            } catch (Exception d) {
+                try {
+                    a.acceptInput();
+                    a.verify();
+                } catch (Exception f) {
+                    System.out.println("Card Blocked.Please Contact bank");
+                }
+            }
+        }
     }
 }
 
 public class RBI {
     static void main(String[] args) {
-        Bank b =  new Bank();
+        Bank b = new Bank();
         b.Init();
     }
 }

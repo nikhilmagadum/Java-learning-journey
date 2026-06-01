@@ -1,4 +1,4 @@
-package Collections;
+package Collections.Exceptionn;
 import java.util.Scanner;
 
 public class ExceptionDemo {
