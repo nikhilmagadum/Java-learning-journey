@@ -5,7 +5,10 @@ class Demo12 extends Thread {
     @Override
     public void run() {
         Thread t =  Thread.currentThread();
-      System.out.println(t);
+     // System.out.println(t);
+        System.out.println(t.getName()); // i will get only name
+        System.out.println(t.getPriority());  // i will get only priority
+        System.out.println(t.getThreadGroup());   // it will give thread group
     }
 }
 public class topic3 {
