@@ -1,4 +1,5 @@
 package Collections.MultiThreadingg;
+// How will u achieve multithreading using single run()
 
 import java.util.Scanner;
 
@@ -6,16 +7,16 @@ class SingleRun extends Thread {
 
     @Override
     public void run() {
-       Thread t =    Thread.currentThread();
-       String name =  t.getName();
+        Thread t = Thread.currentThread();
+        String name = t.getName();
 
-       if(name.equals("Thread-0")){
+        if (name.equals("Thread-0")) {
             add();
-       }else if(name.equals("Thread-1")) {
-           printChar();
-       } else {
-           printNumbers();
-       }
+        } else if (name.equals("Thread-1")) {
+            printChar();
+        } else {
+            printNumbers();
+        }
     }
 
     public void add() {
