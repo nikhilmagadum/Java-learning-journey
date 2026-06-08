@@ -1,4 +1,4 @@
-package Collections.MultiThreadingg;
+package Exception_AND_Multithreading.MultiThreadingg;
 
 // Here in this captain is the main player --> who decides who is coach  and all etc
 // If Primary Thread completes the execution then Daemon threads will also complete the execution

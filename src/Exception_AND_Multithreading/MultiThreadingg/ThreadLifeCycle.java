@@ -1,4 +1,4 @@
-package Collections.MultiThreadingg;
+package Exception_AND_Multithreading.MultiThreadingg;
 
 class Demo extends Thread {
 

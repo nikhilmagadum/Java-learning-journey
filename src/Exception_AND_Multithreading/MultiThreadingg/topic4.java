@@ -1,4 +1,4 @@
-package Collections.MultiThreadingg;
+package Exception_AND_Multithreading.MultiThreadingg;
 // join() in thread in java
 // isAlive()
 class Demonew extends Thread {

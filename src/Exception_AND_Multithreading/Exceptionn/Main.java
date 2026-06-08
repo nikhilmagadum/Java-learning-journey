@@ -1,4 +1,4 @@
-package Collections.Exceptionn;
+package Exception_AND_Multithreading.Exceptionn;
 
 import java.util.Scanner;
 

@@ -1,10 +1,25 @@
-package Collections.MultiThreadingg;
+package Exception_AND_Multithreading.MultiThreadingg;
+// How will u achieve multithreading using single run()
 
 import java.util.Scanner;
 
-class Demo1 extends Thread {
+class SingleRun extends Thread {
+
     @Override
     public void run() {
+        Thread t = Thread.currentThread();
+        String name = t.getName();
+
+        if (name.equals("Thread-0")) {
+            add();
+        } else if (name.equals("Thread-1")) {
+            printChar();
+        } else {
+            printNumbers();
+        }
+    }
+
+    public void add() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number1 ");
         int num1 = sc.nextInt();
@@ -13,11 +28,8 @@ class Demo1 extends Thread {
         int res = num1 + num2;
         System.out.println("The result of addition is :" + res);
     }
-}
 
-class Demo2 extends Thread {
-    @Override
-    public void run() {
+    public void printChar() {
         System.out.println("Printinh characters started ");
         for (int i = 65; i <= 75; i++) {
             System.out.println((char) i);
@@ -30,11 +42,8 @@ class Demo2 extends Thread {
         }
         System.out.println("Printing characters ended ");
     }
-}
 
-class Demo3 extends Thread {
-    @Override
-    public void run() {
+    public void printNumbers() {
         System.out.println("Printing Numbers");
 
         for (int i = 1; i <= 10; i++) {
@@ -48,14 +57,17 @@ class Demo3 extends Thread {
     }
 }
 
-public class Day1 {
-    static void main(String[] args) {
-        Demo1 d1 = new Demo1();
-        Demo2 d2 = new Demo2();
-        Demo3 d3 = new Demo3();
 
-        d1.start();
-        d2.start();
-        d3.start();   // call indirectly through start() not directly through run()
+public class TopicsingleRun {
+    static void main(String[] args) {
+
+        SingleRun s1 = new SingleRun();
+        SingleRun s2 = new SingleRun();
+        SingleRun s3 = new SingleRun();
+
+        s1.start();
+        s2.start();
+        s3.start();
+
     }
 }

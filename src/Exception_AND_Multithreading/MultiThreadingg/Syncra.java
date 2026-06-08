@@ -1,4 +1,4 @@
-package Collections.MultiThreadingg;
+package Exception_AND_Multithreading.MultiThreadingg;
 
 // Very important question
 //what is semaphore in java --> instructions are only semaphore
