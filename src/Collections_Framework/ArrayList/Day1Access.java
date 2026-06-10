@@ -1,7 +1,6 @@
-package Collections_Framework;
+package Collections_Framework.ArrayList;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.ListIterator;
 
 public class Day1Access {
