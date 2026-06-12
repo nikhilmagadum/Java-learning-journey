@@ -8,7 +8,7 @@ public class SecondLargest {
         int p = 0, vp = 0;
 
         for (int i = 0; i < ar.length; i++) {
-            if (ar[i] > p){
+            if (ar[i] > p) {
                 vp = p;
                 p = ar[i];
             } else if (ar[i] > vp) {
@@ -32,7 +32,7 @@ public class SecondLargest {
             arr[i] = sc.nextInt();
         }
 
-       int res  = secLargest(arr);
+        int res = secLargest(arr);
         System.out.println(res);
 
     }
